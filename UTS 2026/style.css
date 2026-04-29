@@ -1,0 +1,240 @@
+<>
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "fjalla One", sans-serif; 
+    background: linear-gradient(135deg, #e6b4f5, #e6e6fa, #cce0ff, #fffff0);
+    background-attachment: fixed;
+    line-height: 1.6;
+    color: #333;
+}
+.navbar {
+  background:  rgb(255, 186, 255);
+  color: white;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+article {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+  margin-bottom: 5px;
+}
+
+
+ul {
+  margin-left: 20px;
+}
+
+
+.form-container,
+.aboutcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+button {
+  background: rgb(242, 192, 255);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: rgb(242, 192, 255);
+  cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #f8c5ff; 
+    outline: none;
+}
+
+
+.btn-kirim {
+    width: 100%;
+    padding: 14px;
+    background-color: #ecccff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-kirim:hover {
+    background-color: #e6b4f5;
+}
+
+
+.btn-kembali {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #e6b4f5, #e6e6fa, #cce0ff, #fffff0);
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .form-container,
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
